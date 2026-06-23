@@ -57,7 +57,7 @@ export default function Projects() {
       },
     }}
   >
-    {[...projects, ...projects].map((project, i) => (
+    {loopProjects.map((project, i) => (
       <Paper
         key={i}
         sx={{

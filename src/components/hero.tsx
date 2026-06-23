@@ -19,19 +19,19 @@ export default function Hero() {
         {/* Glow Line */}
         <Box
           sx={{
-            width: "80px",
+            width: "100px",
             height: "2px",
             bgcolor: "#64ffda",
             margin: "0 auto",
-            mb: 3,
-            boxShadow: "0 0 20px #64ffda",
+            mb: 2,
+            boxShadow: "0 0 10px #64ffda",
           }}
         />
 
         {/* Role */}
         <Typography
           sx={{
-            letterSpacing: "3px",
+            letterSpacing: "5px",
             fontSize: "0.9rem",
             color: "rgba(255,255,255,0.6)",
           }}
@@ -43,7 +43,7 @@ export default function Hero() {
         <Typography
           sx={{
             fontSize: { xs: "2.8rem", md: "5rem" },
-            fontWeight: 900,
+            fontWeight: 700,
             lineHeight: 1.1,
             mt: 2,
           }}

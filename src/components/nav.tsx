@@ -6,7 +6,6 @@ Button,
 IconButton,
 Box,Menu,Container,MenuItem} from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu'
-import Home from './hero';
 
 const pages = ["Home", "About","Education", "Skills", "Projects", "Contact"];
 
@@ -54,9 +53,9 @@ const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-            //   aria-label="account of current user"
-            //   aria-controls="menu-appbar"
-            //   aria-haspopup="true"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >

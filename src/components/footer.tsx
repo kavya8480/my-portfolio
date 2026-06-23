@@ -27,7 +27,7 @@ export default function Footer() {
           sx={{
             fontSize: "1.5rem",
             fontWeight: 800,
-            letterSpacing: "1px",
+            letterSpacing: "2px",
           }}
         >
           Tapaswini Das

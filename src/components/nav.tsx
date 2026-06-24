@@ -61,25 +61,23 @@ const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              anchorEl={anchorElNav}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-                           transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-            >
-             {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  {page}
-                </MenuItem>
-              ))}
-            </Menu>
+           <Menu
+  anchorEl={anchorElNav}
+  open={Boolean(anchorElNav)}
+  onClose={handleCloseNavMenu}
+>
+  {pages.map((page) => (
+    <MenuItem
+      key={page}
+      onClick={() => {
+        handleScroll(page.toLowerCase());
+        handleCloseNavMenu();
+      }}
+    >
+      {page}
+    </MenuItem>
+  ))}
+</Menu>
           </Box>
           {/* mobile logo  */}
           <Typography
@@ -96,7 +94,7 @@ const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
               textDecoration: 'none',
             }}
           >
-            Kavya.dev
+            TD<span style={{ color: "#64ffda" }}>.dev</span>
             {/* desktop menu  */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } ,justifyContent: "center",

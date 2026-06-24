@@ -29,7 +29,7 @@ export default function Projects() {
       </Typography>
 
       <Typography sx={{ mt: 2, color: "rgba(255,255,255,0.7)" }}>
-        Premium Infinite Showcase
+        Featured Projects & Creations
       </Typography>
 
       {/* CAROUSEL WRAPPER */}
